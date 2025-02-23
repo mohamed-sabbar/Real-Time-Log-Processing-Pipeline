@@ -14,16 +14,16 @@ public class KafkaStreamsProducer {
 
         Properties props = new Properties();
         props.put("application.id", "filebeat-to-test-topic");
-        props.put("bootstrap.servers", "localhost:9092");
+        props.put("bootstrap.servers", "localhost:9093");
         props.put("default.key.serde", Serdes.String().getClass().getName());
         props.put("default.value.serde", Serdes.String().getClass().getName());
         StreamsBuilder builder = new StreamsBuilder();
 
 
-        KStream<String, String> logsStream = builder.stream("logs");
+        KStream<String, String> logsStream = builder.stream("log");
 
-
-        logsStream.to("test1", Produced.with(Serdes.String(), Serdes.String()));
+logsStream.foreach((key,value)-> System.out.println("-----------------------------------------------------------------------------------message de key "+key+", value="+value));
+        logsStream.to("test", Produced.with(Serdes.String(), Serdes.String()));
 
         
         KafkaStreams streams = new KafkaStreams(builder.build(), props);

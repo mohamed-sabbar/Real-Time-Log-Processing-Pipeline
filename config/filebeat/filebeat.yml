@@ -29,7 +29,7 @@ filebeat.inputs:
 
   # Paths that should be crawled and fetched. Glob based paths.
   paths:
-    - C:\Users\moham\OneDrive\Bureau\generated_logs.log
+    - /var/lib/docker/containers/*/*.log
     #- c:\programdata\elasticsearch\logs\*
 
   # Exclude lines. A list of regular expressions to match. It drops the lines that are
@@ -136,13 +136,13 @@ setup.kibana:
 # Configure what output to use when sending the data collected by the beat.
 
 # ---------------------------- Elasticsearch Output ----------------------------
-output.elasticsearch:
+#output.elasticsearch:
   # Array of hosts to connect to.
-  hosts: ["localhost:9200"]
+  #hosts: ["localhost:9200"]
 
   # Performance preset - one of "balanced", "throughput", "scale",
   # "latency", or "custom".
-  preset: balanced
+  #preset: balanced
 
   # Protocol - either `http` (default) or `https`.
   #protocol: "https"
@@ -169,8 +169,8 @@ output.elasticsearch:
 # ------------------------------ Kafka Output -------------------------------
 
 output.kafka:
-  hosts: ["localhost:9092"]  
-  topic: "logs"              
+  hosts: ["kafka:9092"]  
+  topic: "log"              
   partition.round_robin:
     reachable_only: true    
   required_acks: 1          
