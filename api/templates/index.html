@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistiques en temps réel</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Statistiques des API</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>API</th>
+                <th>Moyenne</th>
+                <th>Minimum</th>
+                <th>Maximum</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for api, stats in api_stats.items() %}
+            <tr>
+                <td>{{ api }}</td>
+                <td>{{ stats['avg'] }}</td>
+                <td>{{ stats['min'] }}</td>
+                <td>{{ stats['max'] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <h1>Statistiques des pays</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Pays</th>
+                <th>Nombre de requêtes</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for country, count in country_stats.items() %}
+            <tr>
+                <td>{{ country }}</td>
+                <td>{{ count }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
