@@ -1,0 +1,33 @@
+/* Ajouts pour le mode */
+.connection-info .mode {
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 0.9em;
+  margin-left: 10px;
+}
+
+.connection-info .mode.kafka {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.connection-info .mode.random {
+  background-color: #FF9800;
+  color: white;
+}
+
+/* Ajustements pour les tableaux */
+.country-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.country-table th, .country-table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.country-table th {
+  background-color: #f2f2f2;
+}
