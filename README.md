@@ -34,12 +34,28 @@ Voici le schéma du pipeline :
 ---
 
 ## 📂 Structure du projet
-log-pipeline/ │ 
-              ├── filebeat/ # Configurations Filebeat 
-              ├── kafka/ # Docker et configurations Kafka ├
-              ── spark/ # Script Spark Streaming 
-              ├── flask-api/ # API Flask exposant les résultats 
-              ├── react-dashboard/ # Interface utilisateur React 
-              ├── docker-compose.yml # Orchestration Docker 
-              └── README.md
+├── README.md # Documentation du projet
+│
+├── images/ # Captures d'écran et diagrammes
+│ ├── architecture.png # Diagramme d'architecture
+│ ├── dashboard_phone.png # Vue mobile du dashboard
+│ ├── run_web_app.png # Capture de l'application web
+│ └── spring_boot_web_app.png # Interface Spring Boot
+│
+├── Main/
+│ ├── commands.sh # Scripts utilitaires
+│ └── Dashboard.pbix # Fichier Power BI
+│
+├── Lambda/
+│ ├── docker-compose.yaml # Configuration Docker
+│ ├── producer.py # Producteur de données
+│ └── transform.py # Scripts de transformation
+│
+└── .idea/ # Configuration IDE
+├── .gitignore
+├── .name
+├── misc.xml
+└── modules.xml
+
+
 
