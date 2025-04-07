@@ -68,5 +68,13 @@ Voici le schéma du pipeline :
 ├── generated_logs.log # Exemple de logs générés
 └── README.md # Ce fichier
 ```
+## 🚀 Lancement du projet
 
+1. **Cloner le projet :**
+
+```bash
+git clone https://github.com/votre-utilisateur/Big-Data-Project.git
+cd Real-Time Log Processing Pipeline
+docker-compose up
+```
 
