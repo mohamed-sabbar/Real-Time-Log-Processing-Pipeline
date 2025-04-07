@@ -74,7 +74,18 @@ Voici le schéma du pipeline :
 
 ```bash
 git clone https://github.com/votre-utilisateur/Big-Data-Project.git
+```
+2. **Deployer les dependences :**
+```bash
 cd Real-Time Log Processing Pipeline
 docker-compose up
 ```
-
+3. **Excuter Spark Streaming :**
+```bash
+docker exec -it spark-master spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.2.0 /app/spark.py
+```
+## 📊 Dashboard
+**Lancer le dashboard React :**
+```bash
+http://localhost:3000
+```
