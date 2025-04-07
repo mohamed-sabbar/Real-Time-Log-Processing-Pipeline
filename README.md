@@ -34,6 +34,7 @@ Voici le schéma du pipeline :
 ---
 
 ## 📂 Structure du projet
+```batch 
 Big-Data-Project:.
 |   README.md
 |
@@ -217,5 +218,7 @@ Big-Data-Project:.
                         \---demo
                                 RealTimeAppApplicationTests.class
 
+
+```
 
 
