@@ -40,7 +40,7 @@ services:
       - "8080:8080"  # Interface web de Spark
       - "7077:7077"  # Port pour les workers Spark
     volumes:
-      - C:\Users\moham\OneDrive\Bureau\test\logs-pipline:/app  # Montage du répertoire local
+      - .\backend\spark:/app  # Montage du répertoire local
     networks:
       - spark-net
       - kafka-net

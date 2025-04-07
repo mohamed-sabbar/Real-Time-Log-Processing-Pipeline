@@ -1,33 +1,96 @@
-/* Ajouts pour le mode */
-.connection-info .mode {
-  padding: 5px 10px;
-  border-radius: 3px;
-  font-size: 0.9em;
-  margin-left: 10px;
+.dashboard {
+  padding: 20px;
+  font-family: Arial, sans-serif;
 }
 
-.connection-info .mode.kafka {
-  background-color: #4CAF50;
-  color: white;
+.dashboard-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
-.connection-info .mode.random {
-  background-color: #FF9800;
-  color: white;
+.api-table-container {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* Ajustements pour les tableaux */
-.country-table table {
+.api-table {
   width: 100%;
   border-collapse: collapse;
 }
 
-.country-table th, .country-table td {
-  padding: 8px;
-  border: 1px solid #ddd;
+.api-table th, .api-table td {
+  padding: 12px;
   text-align: left;
+  border-bottom: 1px solid #ddd;
 }
 
-.country-table th {
+.api-table th {
   background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.api-charts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+}
+
+.chart-container {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.chart-container h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.connection-info {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.status {
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.status.connected {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.status.disconnected {
+  background-color: #f44336;
+  color: white;
+}
+
+.mode {
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+.mode.kafka {
+  background-color: #2196F3;
+  color: white;
+}
+
+.mode.random {
+  background-color: #FF9800;
+  color: white;
+}
+
+.last-update {
+  color: #666;
+  font-size: 0.9em;
 }
