@@ -8,7 +8,7 @@ Un pipeline de traitement de logs en temps réel construit avec **Filebeat**, **
 
 Voici le schéma du pipeline :
 
-![Architecture](./publish%20(2).png)
+![Architecture](./assets/architecture.png)
 
 ### 🔄 Fonctionnement
 
