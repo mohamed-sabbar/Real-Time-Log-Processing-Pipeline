@@ -34,5 +34,12 @@ Voici le schéma du pipeline :
 ---
 
 ## 📂 Structure du projet
-log-pipeline/ │ ├── filebeat/ # Configurations Filebeat ├── kafka/ # Docker et configurations Kafka ├── spark/ # Script Spark Streaming ├── flask-api/ # API Flask exposant les résultats ├── react-dashboard/ # Interface utilisateur React ├── docker-compose.yml # Orchestration Docker └── README.md
+log-pipeline/ │ 
+              ├── filebeat/ # Configurations Filebeat 
+              ├── kafka/ # Docker et configurations Kafka ├
+              ── spark/ # Script Spark Streaming 
+              ├── flask-api/ # API Flask exposant les résultats 
+              ├── react-dashboard/ # Interface utilisateur React 
+              ├── docker-compose.yml # Orchestration Docker 
+              └── README.md
 
