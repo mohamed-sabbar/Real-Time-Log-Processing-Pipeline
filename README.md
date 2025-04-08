@@ -89,3 +89,6 @@ docker exec -it spark-master spark-submit --packages org.apache.spark:spark-sql-
 ```bash
 http://localhost:3000
 ```
+![Dashboard](./assets/dashboard.png)
+## 🧑‍💻 Auteur
+Mohamed Sabbar – [LinkedIn](https://www.linkedin.com/in/mohamed-sabbar-463495294/) – mohamedazrou2003@gmail.com
